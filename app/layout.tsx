@@ -17,8 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <TailwindNavbar />
-      <div className={"min-h-screen"}>{children}</div>
+      <div className={"min-h-screen"}>
+        <TailwindNavbar />
+        {children}
+      </div>
     </html>
   );
 }
